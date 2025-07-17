@@ -1,56 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="it">
 <head>
-  <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
-
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="https://glitch.com/favicon.ico" />
-
-  <!--
-      This is the page head - it contains info the browser uses
-      Like the title, which appears on the browser tab but not inside the page
-      Further down you'll see the content that displays in the page
-    -->
-  <title>Hello World!</title>
-
-  <!-- The website stylesheet -->
-  <link rel="stylesheet" href="/style.css" />
-
-  <!-- The website JavaScript file -->
-  <script src="/script.js" defer></script>
+    <meta charset="UTF-8" />
+    <title>Ruota della Fortuna</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Fredoka', sans-serif;
+            background-color: #ffffff;
+            color: #003366;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            color: #0055aa;
+        }
+        .category {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .board {
+            font-size: 2em;
+            letter-spacing: 10px;
+            margin-bottom: 30px;
+            border: 2px solid #0055aa;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #e6f0ff;
+            user-select: none;
+        }
+        .keyboard {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .key {
+            padding: 10px 15px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: #0077cc;
+            color: white;
+            user-select: none;
+        }
+    </style>
 </head>
-
 <body>
-  <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
-  <div class="wrapper">
-    <div class="content" role="main">
-      <h1 class="title">Oh hi website!</h1>
-      <img src="/cool-website.svg" class="illustration" alt="cool website" />
-      <div class="instructions">
-        <p>
-          Fork <a href="https://github.com/glitchdotcom/website-to-compute">this project</a> and open it in a GitHub Codespace.
-        </p>
-        <p> Follow the steps in the README to deploy your new website to Fastly in a few steps!
-        </p>
-
-      </div>
-
-      <footer class="footer">
-        <div>
-          <a class="remix" href="https://github.com/glitchdotcom/website-to-compute">🚧 Get your own site</a>
+    <div class="container">
+        <h1>Ruota della Fortuna</h1>
+        <div class="category">Categoria: <span>Luoghi famosi</span></div>
+        <div class="board">
+            _ _ _ _ _ _ _ _ _ _ _
         </div>
-      </footer>
+        <div class="keyboard">
+            <button class="key">A</button>
+            <button class="key">B</button>
+            <button class="key">C</button>
+            <button class="key">D</button>
+            <button class="key">E</button>
+            <button class="key">F</button>
+            <button class="key">G</button>
+            <button class="key">H</button>
+            <button class="key">I</button>
+            <button class="key">J</button>
+            <button class="key">K</button>
+            <button class="key">L</button>
+            <button class="key">M</button>
+            <button class="key">N</button>
+            <button class="key">O</button>
+            <button class="key">P</button>
+            <button class="key">Q</button>
+            <button class="key">R</button>
+            <button class="key">S</button>
+            <button class="key">T</button>
+            <button class="key">U</button>
+            <button class="key">V</button>
+            <button class="key">W</button>
+            <button class="key">X</button>
+            <button class="key">Y</button>
+            <button class="key">Z</button>
+        </div>
     </div>
-  </div>
 </body>
-
 </html>
